@@ -1,5 +1,5 @@
 import 'package:arikan_software/screens/show_gorevs.dart';
-import 'package:arikan_software/screens/show_school_gorevs.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -34,7 +34,7 @@ import 'package:flutter/material.dart';
             ),
               ElevatedButton(
                   onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>OkulGorevleri()));
+                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>OkulGorevleri()));
               },
                 child: Text("Okul Görevlerini Göster"),
               )

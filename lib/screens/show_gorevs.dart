@@ -2,7 +2,7 @@
 
 import 'package:arikan_software/data/dbHelper.dart';
 import 'package:arikan_software/models/gorev.dart';
-import 'package:arikan_software/screens/delete_gorev.dart';
+
 import 'package:arikan_software/screens/gorev_edit.dart';
 import 'package:arikan_software/screens/show_gorev_details.dart';
 import 'package:flutter/material.dart';
@@ -136,7 +136,7 @@ class _ShowGorevsState extends State{
 
    DeleteGorev(Gorev? selectedGorev) async {
     print("buraya geldi");
-    Navigator.push(context, MaterialPageRoute(builder: (context)=> DeleteGorev(selectedGorev)));
+    //Navigator.push(context, MaterialPageRoute(builder: (context)=> DeleteGorev(selectedGorev)));
 
     await dbHelper.delete(int.parse(selectedGorev!.id.toString()));
 
